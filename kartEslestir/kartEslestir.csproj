@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78496BC6-072E-4B3D-96F5-DDDA06F9A4C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kartEslestir</RootNamespace>
+    <AssemblyName>kartEslestir</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChooseLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseLevel.Designer.cs">
+      <DependentUpon>ChooseLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EasyGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EasyGame.Designer.cs">
+      <DependentUpon>EasyGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HardGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HardGame.Designer.cs">
+      <DependentUpon>HardGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NormalGame.Designer.cs">
+      <DependentUpon>NormalGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChooseLevel.resx">
+      <DependentUpon>ChooseLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EasyGame.resx">
+      <DependentUpon>EasyGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HardGame.resx">
+      <DependentUpon>HardGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormalGame.resx">
+      <DependentUpon>NormalGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BABEL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BELHANDA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DIAGNE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FALCAO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gsBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gsCover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gsInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gsLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gsPuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gsTimer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LUYINDAMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MARCÃO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MUSLERA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TURAN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ABOUBAKAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bjkBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bjkCover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bjkInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bjkLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bjkPuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bjkTimer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DESTANOĞLU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GHEZZAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HUTCHINSON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LARIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LJAJIĆ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NKOUDOU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Özyakup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ROSIER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VIDA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAYINDIR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ERKIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbCover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbPuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbTimer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÖZIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PEROTTI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SOSA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SOUZA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
